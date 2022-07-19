@@ -2,7 +2,7 @@
 
 ## Description
 
-The objective of the project was creating a panel-view component that can be used by the developlers who want to use this componenent in their projects. Therefore demo and implementation of the panel-view component has been seperated from each other. Panel-view components contains header, content and footer parts in itself.
+The objective of the project was creating a panel-view component that can be used by the developers who want to use this componenent in their projects. Therefore demo and implementation of the panel-view component has been seperated from each other. Panel-view components contains header, content and footer parts in itself.
 
 ## Usage
 
