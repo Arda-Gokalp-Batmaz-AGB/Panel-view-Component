@@ -1,0 +1,32 @@
+include:
+  - 'https://gitlab.piworks.net/devops/k8s-files/raw/master/.k8s-static-page.yml'
+
+variables:
+  K8S_STATIC_PAGE_PATH: "build"
+
+stages:
+  - build
+  - test
+  - k8s-static-page
+
+build website:
+  stage: build
+  script:
+    - mkdir build
+    - cp -r src build/src
+    - cp -r demo build/demo
+  artifacts:
+    name: "website-files"
+    paths:
+      - build
+  tags:
+    - linux
+    - docker
+
+test website:
+  stage: test
+  script:
+    - ls -al
+  tags:
+    - linux
+    - docker

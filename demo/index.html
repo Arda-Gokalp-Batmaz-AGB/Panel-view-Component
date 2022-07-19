@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../src/css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel View</title>
+</head>
+<body>
+    <div id="Panel-Collection">
+        <div id="MyPanel1" class="panel">
+            <div class="panel-head">
+            </div>
+            <div class="panel-content">
+            </div>
+            <div class="panel-foot">
+            </div>
+        </div>
+        <div id="MyPanel2" class="panel">
+            <div class="panel-head">
+
+            </div>
+            <div class="panel-content">
+                <textarea class="txtareaContent" placeholder="Content of The Panel"></textarea>
+            </div>
+    
+            <div class="panel-foot">
+                <textarea class="txtareaFoot" placeholder="Footer of The Panel"></textarea>
+            </div>
+    
+        </div>
+        <div id="MyPanel3" class="panel">
+            <div class="panel-head">
+                <h1>test</h1>
+                <p>testcontent test</p>
+            </div>
+            <div class="panel-content">
+                <textarea class="txtareaContent" placeholder="Content of The Panel"></textarea>
+            </div>
+    
+            <div class="panel-foot">
+                <textarea class="txtareaFoot" placeholder="Footer of The Panel"></textarea>
+                <h1>Test</h1>
+                <h1>Test1</h1>
+                <h1>Test2</h1>
+                <h1>Test3</h1>
+                <h1>Test4</h1>
+                <h1>Test5</h1>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="../src/js/panel.js"></script>
+    <script>        
+        var newpanel = new panel("MyPanel1",true,false);
+        var newpanel2 = new panel("MyPanel2",true,true);
+        var newpanel3 = new panel("MyPanel3");
+       // newpanel3.toggleFullScreen();
+    </script>
+</body>
+
+</html>
